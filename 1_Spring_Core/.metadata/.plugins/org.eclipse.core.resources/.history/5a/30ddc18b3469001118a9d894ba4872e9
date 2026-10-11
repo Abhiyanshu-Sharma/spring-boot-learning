@@ -1,0 +1,18 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.isrdc.beans.ABean;
+
+@SpringBootApplication
+public class Sc16Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Sc16Application.class, args);
+		
+		ABean x = context.getBean(ABean.class);
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.isrdc.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AppController {
+	
+	public String process() {
+		return "Some text to show info";
+	}
+}

@@ -1,0 +1,15 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Sc14Application {
+
+	public static void main(String[] args) {
+		String[] arr = {"--port=3456", "--version=2.3.11", "Jay", "Dinesh", "34", "true", "45.56"};
+		
+		SpringApplication.run(Sc14Application.class, arr);
+	}
+
+}

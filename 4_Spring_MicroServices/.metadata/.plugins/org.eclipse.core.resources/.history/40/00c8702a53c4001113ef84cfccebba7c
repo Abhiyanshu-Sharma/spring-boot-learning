@@ -1,0 +1,11 @@
+package com.isrdc.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class AppController {
+	
+	@GetMapping("/pro")
+	public String process() {
+		return "Some text to show the info";
+	}
+}

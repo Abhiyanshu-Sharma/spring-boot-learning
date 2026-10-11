@@ -1,0 +1,20 @@
+package com.isrdc.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+
+public class AppController {
+	
+	@GetMapping("/pro")
+	@ResponseBody
+	public String process() {
+//		There was an unexpected error (type=Not Found, status=404).
+//		No static resource pro.
+//		return "Some text to show the info..."; 
+		
+		return "{"\name"\:"\aman\"}";
+	}
+}

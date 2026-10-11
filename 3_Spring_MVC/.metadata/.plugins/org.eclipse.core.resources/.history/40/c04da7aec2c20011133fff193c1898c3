@@ -1,0 +1,8 @@
+package com.isrdc.entities;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Student {
+
+}

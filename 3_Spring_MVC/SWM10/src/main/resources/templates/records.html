@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Welcome</title>
+	</head>
+	
+	<body>
+		<h1>Hello World...</h1>
+		
+		<hr>
+		
+		<table border="1" align="center" width="50%" style="background-color:#ddd">
+			<thead>
+				<tr>
+					<th>Name-</th>
+					<th>Age-</th>
+					<th>Gender-</th>
+					<th>School-</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr th:each="student : ${records}" align="center">
+					<td th:text="${student.name}">Student Name</td>
+					<td th:if="${student.age <= 10}" th:text="${student.age}" style="color:red">Student Age</td>
+					<td th:unless="${student.age <= 10}" th:text="${student.age}" style="color:green">Student Age</td>
+					<td th:switch="${student.gender}">
+						<span th:case="M" th:text="Male">GENDER</span>
+						<span th:case="F" th:text="Female">GENDER</span>
+						<span th:case="O" th:text="Other">GENDER</span>
+					</td>
+					<td th:text="${student.school}">Student School</td>
+				</tr>
+			</tbody>			
+		</table>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+package com.isrdc.primrepos;
+
+public interface StudentRepo {
+
+}

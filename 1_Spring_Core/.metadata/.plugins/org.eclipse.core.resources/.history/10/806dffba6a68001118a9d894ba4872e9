@@ -1,0 +1,15 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan(basePackageClasses = {"com.abc", })
+public class Sc11Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Sc11Application.class, args);
+	}
+
+}

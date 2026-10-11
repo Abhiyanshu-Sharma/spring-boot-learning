@@ -1,0 +1,25 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.isrdc.beans.ABean;
+import com.isrdc.beans.BBean;
+
+@SpringBootApplication
+public class Sc16Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Sc16Application.class, args);
+		
+		ABean x = context.getBean(ABean.class);
+		System.out.println(x);
+		
+		BBean y = context.getBean(BBean.class);
+		System.out.println(y);
+	}
+
+}
+
+Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.isrdc.beans.BBean' available

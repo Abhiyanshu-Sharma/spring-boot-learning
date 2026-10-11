@@ -1,0 +1,5 @@
+package com.isrdc.primeconfs;
+
+public class PrimaryDataSourceConf {
+
+}

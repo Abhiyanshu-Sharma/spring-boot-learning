@@ -1,0 +1,4 @@
+spring.application.name=SC9
+
+
+server.port=6565

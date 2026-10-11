@@ -1,0 +1,17 @@
+package com.isrdc.beans;
+
+import org.springframework.stereotype.Component;
+
+import jakarta.annotation.PostConstruct;
+
+@Component
+public class ABean {
+	public ABean() {
+		System.out.println("---- ABean() -----");
+	}
+	
+	@PostConstruct
+	public void start() {
+		
+	}
+}

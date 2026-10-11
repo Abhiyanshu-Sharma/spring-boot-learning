@@ -1,0 +1,14 @@
+package com.isrdc;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Student {
+	public Student() {
+		System.out.println("Hello from Student - \n" + this);
+	}
+	
+	public void info() {
+		System.out.println("Student's info()");
+	}
+}

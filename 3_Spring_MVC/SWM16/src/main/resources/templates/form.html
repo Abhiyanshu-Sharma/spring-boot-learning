@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Hello</title>
+	</head>
+	
+	<body>
+		<form action="save_user" th:object = "${user_dto}" method="post">
+				<table>
+					<tr>
+						<th align="left">
+							<label for="un">User Name:</label>
+						</th> 
+					</tr>
+					<tr>
+						<td><input type="text" th:field = "*{name}" id="un"></td>
+					</tr>
+					
+					<tr>
+						<th align="left">
+							<label for="em">Email:</label>
+						</th> 
+					</tr>
+					
+					<tr>
+						<td><input type="email" th:field = "*{email}" id="em"></td>
+					</tr>
+					
+					<tr>
+						<th align="left">
+							<label for="ph">Phone:</label>
+						</th> 
+					</tr>
+					
+					<tr>
+						<td><input type="tel" th:field = "*{phone}" id="ph"></td>
+					</tr>
+					
+					<tr>
+						<th align="left">
+							<label for="cn">Country:</label>
+						</th> 
+					</tr>
+					
+					<tr>
+						<td><input type="text" th:field = "*{country}" id="cn"></td>
+					</tr>
+					
+					<tr align="center">
+						<td><input type="submit" value="Save User"></td>
+					</tr>
+				</table>
+		</form>
+	</body>
+</html>

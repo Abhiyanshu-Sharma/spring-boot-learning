@@ -1,0 +1,5 @@
+package com.isrdc.dtos;
+
+public class UserDTO {
+
+}

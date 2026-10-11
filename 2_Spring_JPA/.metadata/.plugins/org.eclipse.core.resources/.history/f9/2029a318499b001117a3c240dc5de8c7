@@ -1,0 +1,5 @@
+package com.isrdc.secnrepos;
+
+public interface EmployeeRepo {
+
+}

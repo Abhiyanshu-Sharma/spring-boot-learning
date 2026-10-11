@@ -1,0 +1,10 @@
+package com.isrdc.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ABean {
+	public ABean() {
+		System.out.println("----ABean()-----");
+	}
+}

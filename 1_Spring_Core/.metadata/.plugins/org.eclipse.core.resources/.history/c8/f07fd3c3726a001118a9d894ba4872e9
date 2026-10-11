@@ -1,0 +1,27 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.isrdc.beans.ABean;
+
+@SpringBootApplication
+public class Sc18Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Sc18Application.class, args);
+	}
+	
+	@Bean
+	public ABean createABean() {
+		System.out.println("-------createABean()--------");
+		return new ABean("Mohan");
+	}
+	
+	public BBean createBBean() {
+		System.out.println("-------createABean()--------");
+		return new BBean
+	}
+
+}

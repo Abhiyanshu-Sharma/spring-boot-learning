@@ -1,0 +1,22 @@
+package com.isrdc.rests;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AppController {
+	
+	@GetMapping("/info")
+	public String information() {
+			return "Some Info Response";
+	}
+	
+	@GetMapping("/pro")
+	public ResponseEntity<String> process() {
+		String resp = "Some Pro Response";
+		
+		return new ResponseEntity<>(resp, HttpStatus.OK);
+	}
+}

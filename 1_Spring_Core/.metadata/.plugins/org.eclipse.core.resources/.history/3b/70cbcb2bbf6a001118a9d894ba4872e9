@@ -1,0 +1,18 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import com.isrdc.beans.A1Bean;
+
+@SpringBootApplication
+public class Sc22Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Sc22Application.class, args);
+		
+		A1Bean context.getBean(A1.class);
+	}
+
+}

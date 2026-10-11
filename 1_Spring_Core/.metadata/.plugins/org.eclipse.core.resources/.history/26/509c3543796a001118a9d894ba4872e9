@@ -1,0 +1,6 @@
+package com.isrdc.beans;
+
+@Co
+public class ABean {
+
+}

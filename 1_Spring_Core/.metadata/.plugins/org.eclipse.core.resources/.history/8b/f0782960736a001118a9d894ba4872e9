@@ -1,0 +1,27 @@
+package com.isrdc.confs;
+
+import org.springframework.context.annotation.Bean;
+
+import com.isrdc.beans.ABean;
+
+
+
+public class AppConfiguration {
+	@Bean
+	public ABean createABean() {
+		System.out.println("-------createABean()--------");
+		return new ABean("Mohan");
+	}
+	
+	@Bean
+	public BBean createBBean() {
+		System.out.println("-------createBBean()--------");
+		return new BBean("Dinesh");
+	}
+	
+	@Bean
+	public CBean createCBean() {
+		System.out.println("-------createCBean()--------");
+		return new CBean("Mukund");
+	}
+}

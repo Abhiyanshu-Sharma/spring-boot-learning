@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>All Users</title>
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+		<style>
+			#menu {
+				list-style: none;
+			}
+			
+			#menu li {
+				display: inline-block;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h2>Mini APP SWM18</h2>
+		
+		<hr>
+		
+		<ul id="menu">
+			<li><a href="show_all" class="btn btn-secondary">Show All Users</a></li>
+		</ul>
+		
+		<hr>
+		
+		<table class="table w-75 m-auto" >
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>UID</th>r
+					<th>Action</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="user : ${users}">
+					<td th:text="${user.name}"></td>
+					<td th:text="${user.email}"></td>
+					<td th:text="${user.phone}"></td>
+					<td th:text="${user.uid}"></td>
+					<td>
+						<a th:href="@{edit_user/{id} (id=${user.userId})}"><img src="/edit.svg"></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

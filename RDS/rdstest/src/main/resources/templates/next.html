@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Next Page</h1>	
+	
+	<form action="rds_req" th:object="${user_dto}" method="post">
+		<input type="text" th:field="*{name}" placeholder="Enter Name"> <br><br>
+		<input type="text" th:field="*{age}" placeholder="Enter Age"> <br><br>
+		<input type="submit" value="Save User">
+	</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+package com.isrdc;
+
+import org.springframework.stereotype.Service;
+
+@Servi
+public class Teacher {
+	public Teacher() {
+		System.out.println("Hello from Teacher Class");
+	}
+}

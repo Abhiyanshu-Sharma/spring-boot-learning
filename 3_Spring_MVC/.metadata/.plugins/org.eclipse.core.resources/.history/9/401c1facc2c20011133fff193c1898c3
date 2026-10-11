@@ -1,0 +1,5 @@
+package com.isrdc.entities;
+
+public class Student {
+
+}

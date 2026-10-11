@@ -1,0 +1,17 @@
+package com.isrdc.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+import com.isrdc.dtos.StudentDTO;
+
+@Controller
+public class StudentController {
+	
+	public String signupPage(Model model) {
+		
+		model.addAttribute("student_dto", new StudentDTO());
+		
+		return "signup";
+	}
+}

@@ -1,0 +1,18 @@
+package com.isrdc.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.isrdc.primentities.Student;
+import com.isrdc.primrepos.StudentRepo;
+
+public class StudentService {
+
+	@Autowired
+	private StudentRepo stRepo;
+	
+	public void saveStudent() {
+		Student s = new Student("Mohan Dubey", "JEC");
+		
+		stRepo.save(s);
+	}
+}

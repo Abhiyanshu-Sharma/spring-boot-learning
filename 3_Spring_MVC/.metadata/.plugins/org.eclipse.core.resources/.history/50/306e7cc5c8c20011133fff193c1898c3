@@ -1,0 +1,30 @@
+package com.isrdc.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.isrdc.dtos.StudentDTO;
+import com.isrdc.services.StudentService;
+
+@Controller
+public class StudentController {
+	
+	private StudentService studentService;
+	
+	public String saveStudent(StudentDTO studentDTO, Model model) {
+		
+		studentService.saveStudent(studentDTO);
+		
+		model.addAttribute("student_dto", new StudentDTO());
+		model.addAttribute("msg", "Student Account is Created Successfully");
+	}
+	
+	@GetMapping("/signup")
+	public String signupPage(Model model) {
+		
+		model.addAttribute("student_dto", new StudentDTO());
+		
+		return "signup";
+	}
+}

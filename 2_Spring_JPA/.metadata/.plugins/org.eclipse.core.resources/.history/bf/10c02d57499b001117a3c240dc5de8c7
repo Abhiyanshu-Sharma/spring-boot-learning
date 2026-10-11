@@ -1,0 +1,12 @@
+package com.isrdc.services;
+
+import com.isrdc.primrepos.StudentRepo;
+
+public class StudentService {
+
+	private StudentRepo stRepo;
+	
+	public void saveStudent() {
+		
+	}
+}

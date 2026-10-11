@@ -1,0 +1,21 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class Sc8Application {
+	public static void main(String[] args) {
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		ConfigurableApplicationContext context = SpringApplication.run(Sc8Application.class, args);
+		System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+		
+		Student x = context.getBean(Student.class);
+		
+		System.out.println("Hello from main() - \n" + x);
+		
+		x.info();
+	}
+
+}

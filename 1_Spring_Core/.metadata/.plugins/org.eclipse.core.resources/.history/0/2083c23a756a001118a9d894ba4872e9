@@ -1,0 +1,5 @@
+package com.isrdc.confs;
+
+public class AppConfiguration {
+	
+}

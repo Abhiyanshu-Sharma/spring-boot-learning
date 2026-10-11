@@ -1,0 +1,6 @@
+package com.isrdc.runners;
+
+@Component
+public class AppRunner {
+
+}

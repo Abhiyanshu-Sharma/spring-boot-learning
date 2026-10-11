@@ -1,0 +1,3 @@
+spring.application.name=SC4
+
+spring.main.banner-mode=console

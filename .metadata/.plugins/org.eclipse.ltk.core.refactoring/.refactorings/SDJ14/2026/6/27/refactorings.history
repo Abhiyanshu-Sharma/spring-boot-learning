@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;SDJ16/src/main/java/com.isrdc&apos;&#x0D;&#x0A;- Original project: &apos;SDJ14&apos;&#x0D;&#x0A;- Destination element: &apos;SDJ16/src/main/java/com.isrdc&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     SDJ14/src/main/java/com.isrdc.repos&#x0D;&#x0A;     SDJ14/src/main/java/com.isrdc.entities" description="Copy packages" destination="=SDJ16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.isrdc" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.isrdc.repos" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.isrdc.entities" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1782702573978" version="1.0"/>
+</session>

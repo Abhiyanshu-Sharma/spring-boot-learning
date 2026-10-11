@@ -1,0 +1,29 @@
+package com.isrdc.services;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.isrdc.dtos.StudentDTO;
+import com.isrdc.entities.Student;
+import com.isrdc.repos.StudentRepo;
+
+@Service
+public class StudentService {
+	
+	@Autowired
+	private StudentRepo studentRepo;
+	
+	public void saveStudent(StudentDTO studentDTO) {
+		Student student = new Student();
+		
+//		student.setName(studentDTO.getName());
+//		student.setEmail(studentDTO.getEmail());
+//		student.setPhone(studentDTO.getPhone());
+//		student.setCountry(studentDTO.getCountry());
+		
+		BeanUtils.copyProperties(studentDTO, student);
+		
+		studentRepo.save(student);
+	}
+}

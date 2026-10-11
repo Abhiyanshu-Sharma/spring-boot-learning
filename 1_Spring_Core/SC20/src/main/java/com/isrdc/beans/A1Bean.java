@@ -1,0 +1,28 @@
+package com.isrdc.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class A1Bean {
+	private BBean a;
+	
+	@Autowired
+	public void setBBean(BBean a) {
+		System.out.println("---- A1Bean --- Stter DI -----");
+		this.a = a;
+	}
+	
+//	@Autowired
+//	public A1Bean(BBean a) {
+//		System.out.println("---- A1Bean --- Constructor DI -----");
+//		this.a = a;
+//	}
+	
+	public void info() {
+		System.out.println("--Dependency Injection ----  A1Bean.info() ---- ");		
+//		BBean a = new BBean();
+		
+		a.process();
+	}
+}

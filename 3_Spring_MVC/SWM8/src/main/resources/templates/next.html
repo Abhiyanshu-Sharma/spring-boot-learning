@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>First Page</title>
+	</head>	
+	
+	<body>
+		<h1>Next Html File...</h1>
+		
+		<hr>
+		
+		<table border="1" width="60%" align="center">			
+			<tr>
+				<th>Name</th>
+				<td th:text="${student.name}">My Name</td>
+			</tr>
+			<tr>
+				<th>Age</th>
+				<td th:text="${student.age}">My Age</td>
+			</tr>
+			<tr>
+				<th>College</th>
+				<td th:text="${student.college}">My College</td>
+			</tr>
+			<tr>
+				<th>Marks</th>
+				<td th:text="${student.marks}">My Marks</td>
+			</tr>
+		</table>
+	</body>
+
+</html>

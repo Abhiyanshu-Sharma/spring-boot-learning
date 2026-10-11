@@ -1,0 +1,19 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class Sc21Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Sc21Application.class, args);
+		
+	 	A1Bean x = context.getBean(A1Bean.class);
+	 	
+	 	
+	 	x.info();
+	}
+
+}

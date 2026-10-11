@@ -1,0 +1,9 @@
+package com.isrdc.dtos;
+
+public class StudentDTO {
+
+	private String name;	
+	private String email;
+	private String college;
+	private String phone;
+}

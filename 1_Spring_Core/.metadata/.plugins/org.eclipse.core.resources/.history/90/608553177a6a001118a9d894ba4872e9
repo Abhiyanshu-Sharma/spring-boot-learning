@@ -1,0 +1,17 @@
+package com.isrdc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.isrdc.beans.ABean;
+
+@SpringBootApplication
+public class Sc19Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Sc19Application.class, args);
+		
+		ABean a = 
+	}
+
+}

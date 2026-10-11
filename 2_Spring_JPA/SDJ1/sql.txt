@@ -1,0 +1,9 @@
+create database sdj1db;
+
+use sdj1db;
+
+create table users
+(
+	name varchar(40),
+	age int
+);

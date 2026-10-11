@@ -1,0 +1,16 @@
+package com.isrdc.beans;
+
+import jakarta.annotation.PostConstruct;
+
+public class BBean {
+	public BBean(String val) {
+		System.out.println("---------- BBean -----------" + val);
+	}
+	
+	@PostConstruct
+	public void init() {
+		
+	}
+	
+	public void destroy
+}

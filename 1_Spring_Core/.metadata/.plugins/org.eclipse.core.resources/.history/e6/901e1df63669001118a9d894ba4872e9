@@ -1,0 +1,11 @@
+package com.isrdc.beans;
+
+public class BBean {
+	public BBean(String val) {
+		System.out.println("---------- BBean -----------" + val);
+	}
+	
+	public void init() {
+		
+	}
+}

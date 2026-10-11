@@ -1,0 +1,6 @@
+package com.isrdc.beans;
+
+@Compo
+public class BBean {
+
+}
