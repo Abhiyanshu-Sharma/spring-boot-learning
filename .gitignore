@@ -1,0 +1,13 @@
+# STS / Eclipse workspace
+.metadata/
+
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Environment / secrets
+.env

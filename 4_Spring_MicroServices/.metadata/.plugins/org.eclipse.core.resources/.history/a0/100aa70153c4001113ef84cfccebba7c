@@ -1,7 +1,0 @@
-package com.isrdc.controllers;
-
-public class AppController {
-	public String process() {
-		
-	}
-}
