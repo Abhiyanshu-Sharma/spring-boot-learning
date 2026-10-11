@@ -1,4 +1,4 @@
-\# Spring Boot Learning
+# Spring Boot Learning
 
 
 
@@ -6,39 +6,36 @@ A collection of my projects and experiments while learning the Spring ecosystem.
 
 
 
-\## 📚 Learning Path
+## 📚 Learning Path
 
 
 
-\- Spring Core
+- Spring Core
 
-\- Spring MVC
+- Spring MVC
 
-\- Spring Data JPA
+- Spring Data JPA
 
-\- Spring Boot
+- Spring Boot
 
-\- Spring Microservices
-
-
-
-\## 🛠️ Technologies
+- Spring Microservices
 
 
 
-\- Java
-
-\- Spring Boot
-
-\- Spring MVC
-
-\- Spring Data JPA
-
-\- Hibernate
-
-\- MySQL
-
-\- Maven
+## 🛠️ Technologies
 
 
 
+- Java
+
+- Spring Boot
+
+- Spring MVC
+
+- Spring Data JPA
+
+- Hibernate
+
+- MySQL
+
+- Maven
