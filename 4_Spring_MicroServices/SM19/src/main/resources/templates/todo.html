@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<head>
+		<title>Todo Page</title>
+	</head>
+	
+	<body>
+		<h1>ToDo record</h1>
+		
+		<hr>
+		
+		<table border="1" align="center" width="20%">
+			<tr>
+				<th>Id</th>
+				<td th:text="${todo.id}"></td>
+			</tr>
+			<tr>
+				<th>User Id</th>
+				<td th:text="${todo.userId}"></td>
+			</tr>
+			<tr>
+				<th>Title</th>
+				<td th:text="${todo.title}"></td>
+			</tr>
+			<tr>
+				<th>Completed</th>
+				<td th:text="${todo.completed}"></td>
+			</tr>
+		</table>
+	</body>
+
+</html>
