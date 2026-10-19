@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: SM31
+
+server:
+  port: 9090
+
+app:
+ data1: 23
+ data2: true
+ data3: 7.8
+ data4: 'jay'
+ 
