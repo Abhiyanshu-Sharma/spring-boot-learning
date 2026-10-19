@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: SM31
+
+server:
+  port: 9090
+
+app:
+ data: proj27a
+ 
