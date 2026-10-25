@@ -1,6 +1,0 @@
-spring:
- application:
-  name: SM28
-
-server:
- port: 9090

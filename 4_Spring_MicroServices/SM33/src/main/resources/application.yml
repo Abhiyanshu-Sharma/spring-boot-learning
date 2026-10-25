@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: SM33
-
-app:
- data: dt1, dt2, dt3
