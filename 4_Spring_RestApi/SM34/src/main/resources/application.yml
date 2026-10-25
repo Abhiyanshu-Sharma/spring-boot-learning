@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: SM34
+
+app:
+  records: rec1, rec2, rec3
+  data: ['data1', 'data2', 'data3']
