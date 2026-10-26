@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SMC2_m1
+  boot:
+    admin:
+      client:
+        url: http://localhost:5454
+
+server:
+  port: 9090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
