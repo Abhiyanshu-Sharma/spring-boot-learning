@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: SMC4_m1
+  boot:
+    admin:
+      client:
+        url: http://localhost:6868
+
+server:
+  port: 9090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: SMC4_Admin
+
+server:
+  port: 6868
