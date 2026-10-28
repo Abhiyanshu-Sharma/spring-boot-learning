@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: SMC6_Eureka
+
+server:
+  port: 8761
