@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: SMC7-m1
+
+server:
+  port: 9090

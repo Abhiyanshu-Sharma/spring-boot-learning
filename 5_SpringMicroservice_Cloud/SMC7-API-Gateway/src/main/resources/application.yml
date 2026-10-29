@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SMC7-API-Gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+          - id: api-1
+            uri: lb://SMC7-M1
+            predicates:
+            - Path=/m1/pro,/m1/**
+          - id: api-2
+            uri: lb://SMC7-M2
+            predicates:
+            - Path=/m2/act,/m2/**
+server:
+  port: 2222
