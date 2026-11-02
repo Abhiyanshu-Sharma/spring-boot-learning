@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SMC9-API_Gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+          - id: ms1
+            uri: lb://SMC9-M1
+            predicates:
+            - Path=/pro
+          - id: ms2
+            uri: lb://SMC9-M2
+            predicates:
+            - Path=/act
+server:
+  port: 2222

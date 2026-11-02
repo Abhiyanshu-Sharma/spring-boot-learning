@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: SMC9-m2
+server:
+  port: 9091
