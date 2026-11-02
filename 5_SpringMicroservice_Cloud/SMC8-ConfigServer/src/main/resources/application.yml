@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: SMC8-ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Abhiyanshu-Sharma/SMC8-ConfigServer
+server:
+  port: 2222
