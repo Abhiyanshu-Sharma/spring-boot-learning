@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SMC10-m1
+  data:
+    redis:
+      url: mark-money-cows-72762.db.redis.io
+      port: 14317
+      username: default
+      password: HabWI2kjivV5FgEynQM9XwTOsAM6sytd
+server:
+  port: 9090
